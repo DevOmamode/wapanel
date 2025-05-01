@@ -1,0 +1,28 @@
+<?php
+
+namespace App\Http\Resources;
+
+use Illuminate\Http\Request;
+use App\Helpers\DateTimeHelper;
+use Illuminate\Http\Resources\Json\JsonResource;
+
+class WebhookLogResource extends JsonResource
+{
+    /**
+     * Transform the resource into an array.
+     *
+     * @return array<string, mixed>
+     */
+    public function toArray(Request $request): array
+    {
+        // return parent::toArray($request);
+        $data = parent::toArray($request);
+        
+         // Convert updated_at to the organization's timezone and format it
+         $createdAt = DateTimeHelper::convertToOrganizationTimezone($this->created_at);
+         $data['created_at'] = DateTimeHelper::formatDate($createdAt);
+         $updatedAt = DateTimeHelper::convertToOrganizationTimezone($this->updated_at);
+         $data['updated_at'] = DateTimeHelper::formatDate($updatedAt);
+         return $data;
+    }
+}
