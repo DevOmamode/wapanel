@@ -1,6 +1,6 @@
 <template>
     <template v-if="props.title.toLowerCase() != 'chats'">
-    <div v-if="props.displayTopBar === true" :class="`hidden w-full transition-all  duration-400 ease-in-out fixed top-0 `+(shortenedMenu === true?`left-20 pe-[8.5rem]`:`left-[15.5rem] xl:left-[16.1rem] pe-[19.5rem]`)+` right-0 z-10 bg-primary text-white py-4 h-20 md:flex justify-end items-center gap-10`">
+    <div v-if="props.displayTopBar === true" :class="`hidden w-full transition-all  duration-400 ease-in-out fixed top-0 `+(shortenedMenu === true?`left-20 pe-[8.5rem]`:`left-[15.5rem] xl:left-[16.1rem] pe-[19.5rem]`)+` right-0 z-10 bg-primary text-white py-4 h-12 md:flex justify-end items-center gap-10`">
         <div class="relative">
             <span class="pi pi-bell"></span>
             <span class="absolute top-[-0.2em] right-[-0.5rem] text-[0.7rem] w-4 h-4 text-white bg-red-500 flex justify-center rounded-xl">1</span>

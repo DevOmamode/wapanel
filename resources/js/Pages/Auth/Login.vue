@@ -18,7 +18,7 @@
                     <div class="flex items-center justify-between mt-1">
                         <Link href="/forgot-password" class="text-sm text-primary-600 dark:text-primary-500 border-b hover:border-gray-500">{{ $t('Forgot password?') }}</Link>
                     </div>
-                    <div class="flex items-center justify-between mt-5">
+                    <div class="flex items-center justify-between mt-5 hidden">
                         <div class="flex items-start">
                             <div class="flex items-center h-5">
                                 <input id="remember" aria-describedby="remember" type="checkbox" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-primary-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-primary-600 dark:ring-offset-gray-800">

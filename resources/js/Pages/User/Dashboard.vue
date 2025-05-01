@@ -1,6 +1,6 @@
 <template>
     <AppLayout>
-        <div class="p-4 pb-0 md:p-8 md:pb-0 rounded-[5px] text-[#000] h-full overflow-y-auto capitalize">
+        <div class="p-4 pb-0 md:p-8 md:pb-0 rounded-[5px] text-[#000] h-full overflow-y-auto scrollbar-thin capitalize">
             <div class="flex justify-between mt-3 md:mt-0">
                 <div>
                     <h2 class="md:block hidden text-xl mb-1">{{ $t('Dashboard') }}</h2>
